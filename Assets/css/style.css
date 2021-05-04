@@ -1,0 +1,24 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1 {
+    font-weight: 700;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0%;
+}
+
+form {
+    float: left;
+}
+
+.currentResults {
+    width: 60%;
+    height: 30%;
+    border: black solid 2px;
+    float: right;
+    visibility: hidden;
+}
