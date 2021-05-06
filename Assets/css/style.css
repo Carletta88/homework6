@@ -17,8 +17,23 @@ form {
 
 .currentResults {
     width: 60%;
-    height: 30%;
+    height: 40%;
     border: black solid 2px;
     float: right;
-    visibility: hidden;
+    
+}
+
+.fiveDayResults {
+    width: 60%;
+    height: 30%;
+    float:right;
+    display: flex;
+}
+
+card {
+    width: 10%;
+    height: 30%;
+    margin: 10px;
+    border: black solid 2px;
+
 }
