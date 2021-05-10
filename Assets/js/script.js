@@ -52,7 +52,7 @@ function getForecast(newCity, apiKey) {
         for (i = 0; i < data.list.length; i++) {
             if (data.list[i].dt_txt.search("15:00:00") != -1) {
                 var forecastDate = data.list[i];
-                $(".forecast").append(
+                $(".fiveDayResults").append(
                     `<div class="card bg-primary shadow m-4">
                         <div class="card-body">
                             <h4 class="card-title">${(new Date(1000 * forecastDate.dt).getUTCMonth()) + 1}/${new Date(1000 * forecastDate.dt).getUTCDate()}/${new Date(1000 * forecastDate.dt).getUTCFullYear()}</h4>
@@ -116,7 +116,7 @@ function saveCities() {
 function recentCities(){
     $(".recentSearches").empty();
     recentSearches.forEach(function(city) {
-        $(".recentSearches").prepend($(`<button class="list-group-item list-group-item-action searchButton" data-city="${city}">${city}</button>`));
+        $(".recentSearches").prepend($(`<button class="list-group-item-action searchButton" data-city="${city}">${city}</button>`));
     })
 }
 
